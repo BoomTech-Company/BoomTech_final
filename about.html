@@ -105,89 +105,164 @@
     </div>
 </div>
 <!-- Header End -->
+<!-- =========================================================
+     BOOM TECH - MODERN DUAL-IMAGE ABOUT SECTION
+     Reflecting: Company Profile 2025 Branding
+     Design: Overlapping Parallax & Glassmorphism
+     ========================================================= -->
 
+<style>
+    /* Professional Spacing Optimization */
+    .bt-about-section {
+        padding: 80px 0;
+        background-color: #f8fafd;
+        position: relative;
+        overflow: hidden;
+    }
+    @media (max-width: 991.98px) {
+        .bt-about-section { padding: 40px 0 !important; }
+    }
 
-    <!-- About Start -->
-    <div class="container-fluid about bg-light py-5">
-        <div class="container py-5">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-6 col-xl-5 wow fadeInLeft" data-wow-delay="0.1s">
-                    <div class="about-img">
-                        <img src="img/about-3.webp" class="img-fluid w-100 rounded-top bg-white" alt="BoomTech Development">
-                        <img src="img/about-2.webp" class="img-fluid w-100 rounded-bottom" alt="Software Solutions">
+    /* Dual Overlapping Image Composition */
+    .about-image-wrapper {
+        position: relative;
+        padding-bottom: 50px;
+    }
+    .img-main {
+        width: 85%;
+        border-radius: 20px;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        position: relative;
+        z-index: 2;
+        border: 8px solid white;
+    }
+    .img-secondary {
+        width: 60%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 3;
+        border-radius: 20px;
+        border: 8px solid white;
+        box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    }
+    
+    /* PDF-Style Dot Grid Accent */
+    .bt-dot-accent {
+        position: absolute;
+        top: -20px;
+        left: -20px;
+        width: 120px;
+        height: 120px;
+        background-image: radial-gradient(#29a8df 2px, transparent 2px);
+        background-size: 18px 18px;
+        opacity: 0.3;
+        z-index: 1;
+    }
+
+    /* Mission/Vision Cards from Profile Page 3 */
+    .mv-card {
+        background: white;
+        padding: 25px;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(11, 102, 128, 0.05);
+        border-left: 5px solid #0b6680;
+        height: 100%;
+        transition: 0.3s;
+    }
+    .mv-card:hover { transform: translateY(-5px); box-shadow: 0 15px 35px rgba(0,0,0,0.1); }
+    .mv-icon {
+        font-size: 24px;
+        margin-bottom: 15px;
+        color: #29a8df;
+    }
+
+    /* Stats Counter Styling */
+    .stat-item {
+        border-radius: 15px;
+        padding: 20px;
+        color: white;
+        text-align: center;
+    }
+</style>
+
+<div class="container-fluid bt-about-section">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            
+            <!-- LEFT COLUMN: PROFESSIONAL DUAL IMAGE COMPOSITION -->
+            <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
+                <div class="about-image-wrapper">
+                    <div class="bt-dot-accent"></div>
+                    <!-- Main Image (Top/Back) -->
+                    <img src="img/about-3.webp" class="img-main animate__animated animate__fadeIn" alt="BoomTech Development">
+                    <!-- Secondary Image (Bottom/Front) -->
+                    <img src="img/about-2.webp" class="img-secondary animate__animated animate__fadeInUp" alt="Software Solutions" data-wow-delay="0.5s">
+                    
+                </div>
+            </div>
+
+            <!-- RIGHT COLUMN: PROFILE CONTENT -->
+            <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
+                <h6 class="fw-bold text-uppercase mb-2" style="color: #f7941d; letter-spacing: 3px;">OUR COMPANY</h6>
+                <h1 class="display-5 fw-bold mb-3" style="color: #0b6680;">PROFILE</h1>
+                <p class="text-info fw-bold mb-4" style="font-style: italic;">Smart World, Smart Work.</p>
+                
+                <p class="text-muted mb-4" style="font-size: 1.05rem; line-height: 1.8;">
+                    Boom Tech is a fast-growing Tanzanian technology company committed to transforming the digital landscape through cutting-edge software development and IT solutions. With over five years of experience, we have become a trusted name in delivering robust digital products.
+                </p>
+
+                <!-- Mission & Vision (Page 3 of your Profile) -->
+                <div class="row g-4 mb-5">
+                    <div class="col-md-6">
+                        <div class="mv-card">
+                            <div class="mv-icon"><i class="fas fa-bullseye"></i></div>
+                            <h5 class="fw-bold" style="color: #0b6680;">Our Mission</h5>
+                            <p class="small text-muted mb-0">Democratizing access to smart technology for businesses seeking reliable and affordable software development.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mv-card" style="border-left-color: #f7941d;">
+                            <div class="mv-icon" style="color: #f7941d;"><i class="fas fa-eye"></i></div>
+                            <h5 class="fw-bold" style="color: #0b6680;">Our Vision</h5>
+                            <p class="small text-muted mb-0">Envisioning a future where businesses effortlessly integrate technology to drive innovation and growth.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-xl-7 wow fadeInRight" data-wow-delay="0.3s">
-                    <h4 class="text-primary">About BoomTech</h4>
-                    <h1 class="display-5 mb-4">Tanzania's Premier Software Development Company</h1>
-                    <p class="text ps-4 mb-4">We craft custom software solutions, mobile applications, and ERP systems that empower Tanzanian businesses to thrive in the digital age. From healthcare to hospitality, our technology drives success.</p>
-                    <div class="row g-4 justify-content-between mb-5">
-                        <div class="col-lg-6 col-xl-5">
-                            <p class="text-dark"><i class="fas fa-check-circle text-primary me-1"></i> Custom Software Development</p>
-                            <p class="text-dark mb-0"><i class="fas fa-check-circle text-primary me-1"></i> Cross-Platform Mobile Apps</p>
-                        </div>
-                        <div class="col-lg-6 col-xl-7">
-                            <p class="text-dark"><i class="fas fa-check-circle text-primary me-1"></i> ERP & Business Automation</p>
-                            <p class="text-dark mb-0"><i class="fas fa-check-circle text-primary me-1"></i> Cloud & API Integration</p>
+
+                <!-- Modern Counters (Using Counter-Up) -->
+                <div class="row g-3">
+                    <div class="col-4">
+                        <div class="stat-item" style="background: #0b6680;">
+                            <h3 class="fw-bold mb-0 text-white"><span class="counter-value" data-toggle="counter-up">25</span>+</h3>
+                            <small class="text-uppercase" style="font-size: 0.65rem;">Projects</small>
                         </div>
                     </div>
-                    <div class="row g-4 justify-content-between mb-5">
-                        <div class="col-xl-5"><a href="contact.html" class="btn btn-primary rounded-pill py-3 px-5">Start Your Project</a></div>
-                        <div class="col-xl-7 mb-5">
-                            <div class="about-customer d-flex position-relative">
-                                <img src="img/team-1.jpg" class="img-fluid btn-xl-square position-absolute" style="left: 0; top: 0;" alt="Client">
-                                <img src="img/team-2.jpg" class="img-fluid btn-xl-square position-absolute" style="left: 45px; top: 0;" alt="Client">
-                                <img src="img/team-3.jpg" class="img-fluid btn-xl-square position-absolute" style="left: 90px; top: 0;" alt="Client">
-                                <img src="img/team-4.jpg" class="img-fluid btn-xl-square position-absolute" style="left: 135px; top: 0;" alt="Client">
-                                <div class="position-absolute text-dark" style="left: 220px; top: 10px;">
-                                    <p class="mb-0">50+</p>
-                                    <p class="mb-0">Satisfied Clients</p>
-                                </div>
-                            </div>
+                    <div class="col-4">
+                        <div class="stat-item" style="background: #063544;">
+                            <h3 class="fw-bold mb-0 text-white"><span class="counter-value" data-toggle="counter-up">5</span>+</h3>
+                            <small class="text-uppercase" style="font-size: 0.65rem;">Years</small>
                         </div>
                     </div>
-                    <div class="row g-4 text-center align-items-center justify-content-center">
-                        <div class="col-sm-4">
-                            <div class="bg-primary rounded p-4">
-                                <div class="d-flex align-items-center justify-content-center">
-                                    <span class="counter-value fs-1 fw-bold text-dark" data-toggle="counter-up">25</span>
-                                    <h4 class="text-dark fs-1 mb-0" style="font-weight: 600; font-size: 25px;">+</h4>
-                                </div>
-                                <div class="w-100 d-flex align-items-center justify-content-center">
-                                    <p class="text-white mb-0">Projects Delivered</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="bg-dark rounded p-4">
-                                <div class="d-flex align-items-center justify-content-center">
-                                    <span class="counter-value fs-1 fw-bold text-white" data-toggle="counter-up">5</span>
-                                    <h4 class="text-white fs-1 mb-0" style="font-weight: 600; font-size: 25px;">+</h4>
-                                </div>
-                                <div class="w-100 d-flex align-items-center justify-content-center">
-                                    <p class="mb-0">Years Experience</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="bg-primary rounded p-4">
-                                <div class="d-flex align-items-center justify-content-center">
-                                    <span class="counter-value fs-1 fw-bold text-dark" data-toggle="counter-up">15</span>
-                                    <h4 class="text-dark fs-1 mb-0" style="font-weight: 600; font-size: 25px;">+</h4>
-                                </div>
-                                <div class="w-100 d-flex align-items-center justify-content-center">
-                                    <p class="text-white mb-0">Tech Specialists</p>
-                                </div>
-                            </div>
+                    <div class="col-4">
+                        <div class="stat-item" style="background: #f7941d;">
+                            <h3 class="fw-bold mb-0 text-white"><span class="counter-value" data-toggle="counter-up">15</span>+</h3>
+                            <small class="text-uppercase" style="font-size: 0.65rem;">Experts</small>
                         </div>
                     </div>
+                </div>
+
+                <div class="mt-5">
+                    <a href="contact.html" class="btn px-5 py-3 text-white fw-bold rounded-pill" style="background: linear-gradient(45deg, #0b6680, #29a8df); border: none; box-shadow: 0 10px 20px rgba(11, 102, 128, 0.2);">
+                        Learn More About Us <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- About End -->
+</div>
 
- 
+<!-- ====================== END ABOUT SECTION ====================== -->
 
     <!-- Footer Start -->
     <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">

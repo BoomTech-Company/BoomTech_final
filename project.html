@@ -68,45 +68,47 @@
     </div>
     <!-- ====================== NAVBAR END ====================== -->
 
-     <!-- Header Start -->
+
+
+
+<!-- Header Start -->
 <div class="container-fluid bg-breadcrumb"
      style="
-        background-image: url('img/about-bg.webp');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                    url('img/about-bg.webp') center center / cover no-repeat;
         min-height: 350px;
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
         position: relative;
      ">
 
-    <!-- Overlay -->
-    <div style="
-        position: absolute;
-        inset: 0;
-        background: rgba(0,0,0,0.6);
-    "></div>
-
     <!-- Content -->
     <div class="container text-center py-5"
-         style="max-width: 900px; position: relative; z-index: 1;">
+         style="
+            max-width: 900px;
+            position: relative;
+            z-index: 2;
+         ">
         
         <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">
-            project BoomTech
+            Project-BoomTech
         </h4>
 
         <ol class="breadcrumb justify-content-center mb-0 wow fadeInDown"
-            data-wow-delay="0.3s">
-            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-            <li class="breadcrumb-item"><a href="#">Pages</a></li>
-            <li class="breadcrumb-item active text-primary">project</li>
+            data-wow-delay="0.3s"
+            style="background: transparent;">
+            <li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
+            <li class="breadcrumb-item"><a href="#" class="text-white">Pages</a></li>
+            <li class="breadcrumb-item active text-primary">Project</li>
         </ol>
 
     </div>
 </div>
 <!-- Header End -->
+
+
 
 
     <!-- Project Start -->
@@ -130,10 +132,6 @@
                             <a href="#" class="h4 text-decoration-none">Digital Marketing- Revolutionary Mobile Branding Platform</a>
                             <p class="text-muted mt-3 mb-4">Cross-platform mobile application built with Flutter for innovative branding solutions, connecting businesses with customers through interactive mobile experiences.</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <div>
-                                    <small class="text-primary"><i class="fas fa-calendar me-1"></i>2024</small>
-                                    <small class="text-success ms-3"><i class="fas fa-users me-1"></i>500+ Users</small>
-                                </div>
                                 <a class="btn btn-primary rounded-pill py-2 px-4" href="contact.html">View Case Study</a>
                             </div>
                         </div>
@@ -151,10 +149,7 @@
                             <a href="#" class="h4 text-decoration-none">Jellow LMS - Advanced Learning Management System</a>
                             <p class="text-muted mt-3 mb-4">Full-stack web platform with Laravel backend and React frontend, featuring course management, student tracking, and multilingual support for language institutions.</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <div>
-                                    <small class="text-primary"><i class="fas fa-calendar me-1"></i>2023</small>
-                                    <small class="text-success ms-3"><i class="fas fa-users me-1"></i>1,200+ Students</small>
-                                </div>
+
                                 <a class="btn btn-primary rounded-pill py-2 px-4" href="contact.html">View Case Study</a>
                             </div>
                         </div>
@@ -172,10 +167,7 @@
                             <a href="#" class="h4 text-decoration-none">Enterprise ERP Solution - Complete Business Automation</a>
                             <p class="text-muted mt-3 mb-4">Comprehensive ERP system integrating inventory, accounting, HR, and supply chain management with real-time reporting and mobile access for Tanzanian enterprises.</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <div>
-                                    <small class="text-primary"><i class="fas fa-calendar me-1"></i>2024</small>
-                                    <small class="text-success ms-3"><i class="fas fa-building me-1"></i>Multi-Location</small>
-                                </div>
+
                                 <a class="btn btn-primary rounded-pill py-2 px-4" href="contact.html">View Case Study</a>
                             </div>
                         </div>
@@ -193,10 +185,7 @@
                             <a href="#" class="h4 text-decoration-none">HealthConnect Mobile - Patient Management System</a>
                             <p class="text-muted mt-3 mb-4">React Native mobile application for healthcare providers featuring appointment scheduling, patient records, telemedicine integration, and prescription management.</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <div>
-                                    <small class="text-primary"><i class="fas fa-calendar me-1"></i>Ongoing</small>
-                                    <small class="text-success ms-3"><i class="fas fa-stethoscope me-1"></i>HIPAA Compliant</small>
-                                </div>
+
                                 <a class="btn btn-primary rounded-pill py-2 px-4" href="contact.html">View Case Study</a>
                             </div>
                         </div>
@@ -207,54 +196,165 @@
     </div>
     <!-- Project End -->
 
-    <!-- Technology Stack Start -->
-    <div class="container-fluid bg-light py-5">
-        <div class="container py-5">
-            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
-                <h4 class="text-primary">Technology Stack</h4>
-                <h1 class="display-4">Technologies We Master</h1>
-            </div>
-            <div class="row g-4 text-center">
-                <div class="col-md-3 col-lg-2">
-                    <div class="tech-item p-4 rounded bg-white shadow-sm">
-                        <i class="fab fa-react fa-3x text-primary mb-3"></i>
-                        <h5>React.js</h5>
-                    </div>
-                </div>
-                <div class="col-md-3 col-lg-2">
-                    <div class="tech-item p-4 rounded bg-white shadow-sm">
-                        <i class="fab fa-laravel fa-3x text-primary mb-3"></i>
-                        <h5>Laravel</h5>
-                    </div>
-                </div>
-                <div class="col-md-3 col-lg-2">
-                    <div class="tech-item p-4 rounded bg-white shadow-sm">
-                        <i class="fab fa-flutter fa-3x text-primary mb-3"></i>
-                        <h5>Flutter</h5>
-                    </div>
-                </div>
-                <div class="col-md-3 col-lg-2">
-                    <div class="tech-item p-4 rounded bg-white shadow-sm">
-                        <i class="fab fa-node-js fa-3x text-primary mb-3"></i>
-                        <h5>Node.js</h5>
-                    </div>
-                </div>
-                <div class="col-md-3 col-lg-2">
-                    <div class="tech-item p-4 rounded bg-white shadow-sm">
-                        <i class="fas fa-database fa-3x text-primary mb-3"></i>
-                        <h5>MySQL</h5>
-                    </div>
-                </div>
-                <div class="col-md-3 col-lg-2">
-                    <div class="tech-item p-4 rounded bg-white shadow-sm">
-                        <i class="fab fa-aws fa-3x text-primary mb-3"></i>
-                        <h5>AWS</h5>
-                    </div>
+
+
+
+<!-- Technology Stack Start -->
+<div class="container-fluid tech-section py-5">
+    <div class="container py-5">
+
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
+            <h4 class="section-subtitle">Technology Stack</h4>
+            <h1 class="display-4 fw-bold section-title">Technologies We Master</h1>
+        </div>
+
+        <div class="row g-4 text-center">
+
+            <!-- React -->
+            <div class="col-md-3 col-lg-2">
+                <div class="tech-item p-4 rounded shadow-sm h-100">
+                    <i class="fab fa-react tech-icon react-icon"></i>
+                    <h5 class="mt-3">React.js</h5>
                 </div>
             </div>
+
+            <!-- Laravel -->
+            <div class="col-md-3 col-lg-2">
+                <div class="tech-item p-4 rounded shadow-sm h-100">
+                    <i class="fab fa-laravel tech-icon laravel-icon"></i>
+                    <h5 class="mt-3">Laravel</h5>
+                </div>
+            </div>
+
+            <!-- Flutter -->
+            <div class="col-md-3 col-lg-2">
+                <div class="tech-item p-4 rounded shadow-sm h-100">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Google-flutter-logo.png"
+                         alt="Flutter"
+                         class="flutter-icon">
+                    <h5 class="mt-3">Flutter</h5>
+                </div>
+            </div>
+
+            <!-- Node -->
+            <div class="col-md-3 col-lg-2">
+                <div class="tech-item p-4 rounded shadow-sm h-100">
+                    <i class="fab fa-node-js tech-icon node-icon"></i>
+                    <h5 class="mt-3">Node.js</h5>
+                </div>
+            </div>
+
+            <!-- MySQL -->
+            <div class="col-md-3 col-lg-2">
+                <div class="tech-item p-4 rounded shadow-sm h-100">
+                    <i class="fas fa-database tech-icon mysql-icon"></i>
+                    <h5 class="mt-3">MySQL</h5>
+                </div>
+            </div>
+
+            <!-- AWS -->
+            <div class="col-md-3 col-lg-2">
+                <div class="tech-item p-4 rounded shadow-sm h-100">
+                    <i class="fab fa-aws tech-icon aws-icon"></i>
+                    <h5 class="mt-3">AWS</h5>
+                </div>
+            </div>
+
         </div>
     </div>
-    <!-- Technology Stack End -->
+</div>
+<!-- Technology Stack End -->
+
+
+<style>
+
+    /* TECHNOLOGY SECTION BACKGROUND */
+    .tech-section {
+        background-image:
+            linear-gradient(
+                rgba(5, 15, 25, 0.82),
+                rgba(5, 15, 25, 0.82)
+            ),
+            url('img/technology_background_1.jpg');
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    /* TITLES */
+    .section-subtitle {
+        color: #00bcd4;
+        font-weight: 700;
+    }
+
+    .section-title {
+        color: white;
+    }
+
+    /* CARD STYLE */
+    .tech-item {
+        background: rgba(255,255,255,0.08);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255,255,255,0.1);
+        transition: 0.4s ease;
+        cursor: pointer;
+    }
+
+    .tech-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+        background: rgba(255,255,255,0.12);
+    }
+
+    /* TEXT */
+    .tech-item h5 {
+        color: white;
+        font-weight: 600;
+    }
+
+    /* ICONS */
+    .tech-icon {
+        font-size: 3rem;
+        transition: 0.4s ease;
+    }
+
+    .flutter-icon {
+        width: 55px;
+        height: 55px;
+        object-fit: contain;
+        transition: 0.4s ease;
+    }
+
+    /* ICON ANIMATION */
+    .tech-item:hover .tech-icon,
+    .tech-item:hover .flutter-icon {
+        transform: scale(1.15) rotate(5deg);
+    }
+
+    /* ICON COLORS */
+    .react-icon {
+        color: #00d8ff;
+    }
+
+    .laravel-icon {
+        color: #ff5722;
+    }
+
+    .node-icon {
+        color: #4caf50;
+    }
+
+    .mysql-icon {
+        color: #9c27b0;
+    }
+
+    .aws-icon {
+        color: #ff9800;
+    }
+
+</style>
 
     <!-- FAQ Start -->
     <div class="container-fluid faq py-5">

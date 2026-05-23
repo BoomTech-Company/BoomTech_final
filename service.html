@@ -67,46 +67,45 @@
     </div>
     <!-- ====================== NAVBAR END ====================== -->
 
-
-  <!-- Header Start -->
+<!-- Header Start -->
 <div class="container-fluid bg-breadcrumb"
      style="
-        background-image: url('img/about-bg.webp');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                    url('img/about-bg.webp') center center / cover no-repeat;
         min-height: 350px;
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
         position: relative;
      ">
 
-    <!-- Overlay -->
-    <div style="
-        position: absolute;
-        inset: 0;
-        background: rgba(0,0,0,0.6);
-    "></div>
-
     <!-- Content -->
     <div class="container text-center py-5"
-         style="max-width: 900px; position: relative; z-index: 1;">
+         style="
+            max-width: 900px;
+            position: relative;
+            z-index: 2;
+         ">
         
         <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">
             Service BoomTech
         </h4>
 
         <ol class="breadcrumb justify-content-center mb-0 wow fadeInDown"
-            data-wow-delay="0.3s">
-            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-            <li class="breadcrumb-item"><a href="#">Pages</a></li>
+            data-wow-delay="0.3s"
+            style="background: transparent;">
+            <li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
+            <li class="breadcrumb-item"><a href="#" class="text-white">Pages</a></li>
             <li class="breadcrumb-item active text-primary">Service</li>
         </ol>
 
     </div>
 </div>
 <!-- Header End -->
+
+
+
 <!-- Services Start -->
 <div class="container-fluid service py-5" style="background: #f4f7f8;">
     <div class="container py-5">
@@ -263,9 +262,7 @@
                                     <h5>Jellow Language College</h5>
                                     <p class="mb-0">Educational Institution</p>
                                 </div>
-                                <div class="bg-white rounded-circle ms-3">
-                                    <img src="img/testimonial-1.jpg" class="rounded-circle p-2" style="width: 80px; height: 80px; border: 1px solid; border-color: var(--bs-primary);" alt="Jellow">
-                                </div>
+                
                             </div>
                         </div>
                         <div class="testimonial-item bg-white rounded p-4 wow fadeInUp" data-wow-delay="0.5s">
@@ -278,9 +275,7 @@
                                     <h5>Business Owner</h5>
                                     <p class="mb-0">BrandVia Bajaji Client</p>
                                 </div>
-                                <div class="bg-white rounded-circle ms-3">
-                                    <img src="img/testimonial-2.jpg" class="rounded-circle p-2" style="width: 80px; height: 80px; border: 1px solid; border-color: var(--bs-primary);" alt="Client">
-                                </div>
+                    
                             </div>
                         </div>
                         <div class="testimonial-item bg-white rounded p-4 wow fadeInUp" data-wow-delay="0.7s">
@@ -293,9 +288,7 @@
                                     <h5>Enterprise Manager</h5>
                                     <p class="mb-0">ERP Implementation</p>
                                 </div>
-                                <div class="bg-white rounded-circle ms-3">
-                                    <img src="img/testimonial-3.jpg" class="rounded-circle p-2" style="width: 80px; height: 80px; border: 1px solid; border-color: var(--bs-primary);" alt="Enterprise">
-                                </div>
+                        
                             </div>
                         </div>
                     </div>
